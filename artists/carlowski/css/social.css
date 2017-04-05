@@ -1,0 +1,40 @@
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+.fa-tumblr {
+    color: #FFFFFF;
+}
+
+.fa-twitter {
+    color: #FFFFFF;
+}
+
+.fa-instagram {
+    color: #FFFFFF;
+}
+
+.fa-youtube {
+    color: #FFFFFF;
+}
+
+
+.fa-tumblr:hover {
+    color: #32506d;
+}
+
+.fa-twitter:hover {
+    color: #55acee;
+}
+
+.fa-instagram:hover {
+    color: #e95950;
+}
+
+.fa-youtube:hover {
+    color: #bb0000;
+}
