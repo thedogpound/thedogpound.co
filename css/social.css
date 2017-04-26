@@ -7,17 +7,29 @@ a:visited {
 }
 
 .fa-facebook:hover {
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
     color: #3B5998;
 }
 
 .fa-twitter:hover {
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
     color: #55acee;
 }
 
 .fa-instagram:hover {
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
     color: #e95950;
 }
 
 .fa-youtube:hover {
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
     color: #bb0000;
 }

@@ -26,5 +26,8 @@ h1:link {
 }
 
 .nav a:hover{
+  -moz-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  -webkit-transition: all .3s ease-in;
   background-color: #f6f6f6;
 }
