@@ -1,0 +1,12 @@
+Options +FollowSymLinks -MultiViews
+
+DirectoryIndex index.html
+
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule /([^/]+)/?$ $1.html [L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^/]+)/([^/]+)/?$ index.html?action=$1&id=$2 [L,QSA]
