@@ -1,0 +1,26 @@
+html {
+    overflow: hidden;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    overflow: auto;
+}
+
+tr {
+    text-align: center;
+}
+
+th {
+    text-align: center;
+    background-color: #000;
+}
+
+th:hover {
+    background-color: #181818;
+}
+
+#header {
+    background-color: #1e1e1e;
+}

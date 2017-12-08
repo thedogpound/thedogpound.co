@@ -1,0 +1,349 @@
+/* --- General CSS --- */
+* {
+  padding: 0;
+}
+
+@font-face {
+    font-family: 'sf_ui_textsemibold';
+    src: url("sf-ui-text-semibold-webfont.woff2") format('woff2'), url('sf-ui-text-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: "sf_ui_textsemibold";
+    margin: 0;
+}
+
+img {
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+/* --- Grids for navbar --- */
+.grid-container {
+    display: grid;
+    grid-column-gap: 0px;
+    grid-template-columns: 25% 50% 25%;
+    background-color: #2196F3;
+}
+
+.grid-item {
+    font-family: "sf_ui_textsemibold";
+    background-color: #131313;
+    color: #f6f6f6;
+    text-align: center;
+    letter-spacing: 1.8px;
+    margin: 0px;
+}
+
+
+/* --- Top navbar icons --- */
+#logo {
+    margin-top: 19px;
+}
+
+#socialicon {
+    margin-top: 19px;
+}
+
+/* --- Add a black background color to the top navigation ---  */
+.topnav {
+    font-family: "sf_ui_textsemibold";
+    background-color: #131313;
+    color: #f6f6f6;
+    letter-spacing: 1.8px;
+    text-align: center;
+    list-style: none;
+    margin: 0;
+}
+
+.one {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.two {
+  text-align: center;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+.three {
+  grid-column-start: 3;
+  grid-column-end: 3;
+}
+
+.topnav ul {
+  text-align: center;
+  padding: 0px;
+}
+
+.topnav li {
+    display: inline-block;
+    text-align: center;
+    float: left;
+    padding: 0;
+    margin: 0;
+    width: 20%;
+}
+
+/* --- Style the links inside the navigation bar --- */
+.topnav a {
+    text-align: center;
+    margin: 0;
+    display: block;
+    color: #f2f2f2;
+    padding: 25px;
+    text-decoration: none;
+    font-size: 12px;
+    width:
+}
+
+/* --- Change the color of links on hover --- */
+.topnav a:hover {
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    background-color: #202020;
+}
+
+/* --- YouTube Video Embed --- */
+.video-container {
+    position: relative;
+    padding-bottom: 43%;
+    padding-top: 13.5%;
+    overflow: hidden;
+    height: 0;
+    margin: 0;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+/* --- Home image container --- */
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#homepage {
+    margin: 0;
+    color: #f6f6f6;
+    letter-spacing: 1.8px;
+}
+
+.button {
+    background-color: white;
+    color: black;
+    font-family: "sf_ui_textsemibold";
+}
+
+/* --- Dropdown Social Menu --- */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    border-radius: 8px;
+    background-color: #f6f6f6;
+    color: #131313;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* --- Pricing Tables --- */
+table {
+    margin-left:auto;
+    margin-right:auto;
+    border-collapse: collapse;
+    width: 70%;
+}
+
+th {
+    text-align: left;
+    font-weight: normal;
+    padding: 8px;
+    padding-left: 15px;
+    color: white;
+    max-width: 23.33%;
+}
+
+td {
+    text-align: center;
+    padding: 8px;
+    border: 1px solid #d8d8d8;
+    max-width: 23.33%;
+}
+
+#money {
+    font-size: 40px;
+    background-color: #e7e7e7;
+}
+
+/* --- Platform Pricing --- */
+
+#col1 {
+    background-color: #89d86d;
+    border-top-left-radius: 10px;
+}
+
+#col2 {
+    background-color: #497afb;
+}
+
+#col3 {
+    background-color: #5957d2;
+    border-top-right-radius: 10px;
+}
+
+#colbot1 {
+    background-color: #89d86d;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 10px;
+}
+
+#colbot3 {
+    background-color: #5957d2;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 10px;
+}
+
+/* --- DJ Pricing --- */
+#col4 {
+    background-color: #000000;
+    border-top-left-radius: 10px;
+    color: #f2f2f2;
+}
+
+#col5 {
+    background-color: #000000;
+    color: #f2f2f2;
+}
+
+#col6 {
+    background-color: #000000;
+    border-top-right-radius: 10px;
+    color: #f2f2f2;
+}
+
+#colbot4 {
+    background-color: #000000;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 10px;
+}
+
+#colbot6 {
+    background-color: #000000;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 10px;
+}
+
+/* --- Beat Tables --- */
+#tablegeneral {
+    width: 100%;
+}
+
+#col7 {
+    background-color: #4576f7;
+    border-top-left-radius: 10px;
+    color: #f2f2f2;
+}
+
+#col8 {
+    background-color: #d52f53;
+    color: #f2f2f2;
+}
+
+#col9 {
+    background-color: #8ad96e;
+    border-top-right-radius: 10px;
+    color: #f2f2f2;
+}
+
+#colbot7 {
+    background-color: #4576f7;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 10px;
+}
+
+#colbot9 {
+    background-color: #8ad96e;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 10px;
+}
+
+/* --- Fuck linkfire for not letting us in --- */
+#linktable {
+    overflow: visible;
+    max-width: 320px;
+    display: block;
+    background-color: #1e1e1e;
+    margin: auto;
+    padding: 0;
+    border: 0;
+    font-size: 16px;
+    vertical-align: baseline;
+    text-align: center;
+}
+
+/* --- Social Footer Links --- */
+#social {
+    color: black;
+    letter-spacing: 6px;
+}
+
+.fa-facebook:hover {
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    color: #3B5998;
+}
+
+.fa-twitter:hover {
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    color: #55acee;
+}
+
+.fa-instagram:hover {
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    color: #e95950;
+}
+
+.fa-youtube:hover {
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    color: #bb0000;
+}
