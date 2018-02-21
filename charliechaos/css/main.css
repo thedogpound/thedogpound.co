@@ -26,19 +26,35 @@ img {
     -ms-user-select: none;
 }
 
-.slide .inside {
-    display: table;
-    height: 100%;
-    width: 100%;
-    padding: 0.3em;
+/* panel styles */
+.panel {
+    /* min height incase content is higher than window height */
+    min-height: 100vh;
+    /* outline: 10px solid hotpink; */
+    /* turn above on to see the edge of panels */
 }
 
-.slide .inside p {
-    display: table-cell;
-    width: 100%;
-    clear: both;
-    vertical-align: middle;
-    text-align: center;
+/* colours */
+.color-1 {
+    background-color: #1e90ff;
+}
+.color-2 {
+    background-color: #5352ed;
+}
+.color-3 {
+    background-color: #ff4757;
+}
+.color-4 {
+    background-color: #ff6348;
+}
+.color-5 {
+    background-color: #ffa502;
+}
+.color-6 {
+    background-color: #2ed573;
+}
+.color-7 {
+    background-color: #F2293A;
 }
 
 /* Go To Top Arrow */
