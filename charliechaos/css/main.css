@@ -1,0 +1,388 @@
+/* General CSS + Colored Slides */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    transition: background 1s ease;
+    background: #1e90ff;
+}
+
+span {
+    font-size: .7em;
+    color: #bdc3c7;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+/* panel styles */
+.panel {
+    /* min height incase content is higher than window height */
+    min-height: 100vh;
+    /* outline: 10px solid hotpink; */
+    /* turn above on to see the edge of panels */
+}
+
+/* colours */
+.color-1 {
+    background-color: #1e90ff;
+}
+.color-2 {
+    background-color: #5352ed;
+}
+.color-3 {
+    background-color: #ff4757;
+}
+.color-4 {
+    background-color: #ff6348;
+}
+.color-5 {
+    background-color: #ffa502;
+}
+.color-6 {
+    background-color: #2ed573;
+}
+.color-7 {
+    background-color: #F2293A;
+}
+
+/* Go To Top Arrow */
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 15px;
+    background-color: transparent;
+    opacity: 1;
+    transition:opacity: .3s
+    ease-out;-moz-transition:opacity .3s
+    ease-out;-webkit-transition:opacity .3s
+    ease-out;-o-transition:opacity .3s ease-out
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+}
+
+#myBtn:hover {
+    opacity: .9;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+}
+
+/* Hamburguer Menu */
+.container {
+    position: relative;
+    text-align: center;
+    left: 0;
+    margin: 0 auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    font-family: 'Rubik', sans-serif;
+    line-height: 1.3;
+}
+
+.container h2 {
+    font-size: 60px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    color: #171717;
+    text-align: left;
+    margin-left: 2%;
+    margin-right: 2%;
+    line-height: 1;
+}
+
+.container h3 {
+    font-size: 22px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    color: #171717;
+    text-align: justify;
+    text-justify: inter-word;
+    margin-left: 2%;
+    margin-right: 2%;
+    line-height: 1.2;
+}
+
+.container p {
+    font-size: 18px;
+    font-family: 'Rubik', sans-serif;
+    color: #171717;
+    text-align: justify;
+    text-justify: inter-word;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.container a {
+    text-decoration: none;
+    opacity: 1;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+}
+
+.container a:hover {
+    opacity: .9;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+}
+
+#menu a {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+    font-size: 20px;
+    overflow: hidden;
+    top: 0px;
+}
+
+.container a:hover:after, .container a:focus:after, .container a:active:after {
+    width: 100%;
+}
+
+h1 {
+    position: relative;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+}
+
+.button_container {
+    position: fixed;
+    top: 5%;
+    right: 3%;
+    height: 27px;
+    width: 35px;
+    cursor: pointer;
+    z-index: 100;
+    transition: opacity .25s ease;
+}
+
+.button_container:hover {
+    opacity: .9;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+}
+
+.button_container.active .top {
+    transform: translateY(11px) translateX(0) rotate(45deg);
+    background: #171717;
+}
+
+.button_container.active .middle {
+    opacity: 0;
+    background: #171717;
+}
+
+.button_container.active .bottom {
+    transform: translateY(-11px) translateX(0) rotate(-45deg);
+    background: #171717;
+}
+
+.button_container span {
+    background: #171717;
+    border: none;
+    height: 5px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .35s ease;
+    cursor: pointer;
+}
+
+.button_container span:nth-of-type(2) {
+    top: 11px;
+}
+
+.button_container span:nth-of-type(3) {
+    top: 22px;
+}
+
+.overlay {
+    position: fixed;
+    background: #7bed9f;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .35s, visibility .35s, height .35s;
+    overflow: hidden;
+}
+
+.overlay.open {
+    opacity: .9;
+    visibility: visible;
+    height: 100%;
+}
+
+.overlay.open li {
+    animation: fadeInRight .5s ease forwards;
+    animation-delay: .35s;
+}
+
+.overlay.open li:nth-of-type(2) {
+    animation-delay: .4s;
+}
+
+.overlay.open li:nth-of-type(3) {
+    animation-delay: .45s;
+}
+
+.overlay.open li:nth-of-type(4) {
+    animation-delay: .50s;
+}
+
+.overlay nav {
+    position: relative;
+    height: 70%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 50px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+.overlay ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: inline-block;
+    position: relative;
+    height: 100%;
+}
+
+.overlay ul li {
+    display: block;
+    height: 25%;
+    height: calc(100% / 4);
+    min-height: 50px;
+    position: relative;
+    opacity: 0;
+}
+
+.overlay ul li a {
+    display: block;
+    position: relative;
+    color: #171717;
+    text-decoration: none;
+    overflow: hidden;
+    font-size: 45px;
+    opacity: 1;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+}
+
+.overlay ul li a:hover {
+    opacity: .9;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+}
+
+.overlay ul li a:hover:after, .overlay ul li a:focus:after, .overlay ul li a:active:after {
+    width: 100%;
+}
+
+.overlay ul li a:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0%;
+    transform: translateX(-50%);
+    height: 3px;
+    background: #171717;
+    transition: .35s;
+    opacity: 0;
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    left: 20%;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}
+
+/* Reading Progress Bar */
+progress {
+    /* Positioning */
+    position: fixed;
+    left: 0;
+    top: 0;
+    /* Dimensions */
+    width: 100%;
+    height: .25em;
+    /* Reset the apperance */
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    /* Get rid of the default border in Firefox/Opera. */
+    border: none;
+    /* For Firefox/IE10+ */
+    background-color: transparent;
+    /* For IE10+, color of the progress bar */
+    color: #171717;
+}
+
+progress::-webkit-progress-bar {
+    background-color: transparent;
+}
+
+.flat::-webkit-progress-value {
+    background-color: #171717;
+}
+
+.flat::-moz-progress-bar {
+    background-color: #171717;
+}
+
+.progress-container {
+    width: 100%;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: .25em;
+    display: block;
+}
+
+.progress-bar {
+    background-color: #171717;
+    width: 50%;
+    display: block;
+    height: inherit;
+}
+
+#contact-page {
+    background: #fafafa;
+}
